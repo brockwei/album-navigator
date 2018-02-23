@@ -1,5 +1,5 @@
 {
-  "homepage": "http://brockwei.github.io/album-navigator",
+  "homepage": "https://brockwei.github.io/album-navigator",
   "name": "album-navigator",
   "version": "0.1.0",
   "private": true,
@@ -16,12 +16,12 @@
     "redux-thunk": "^2.2.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts-ts start",
     "build": "react-scripts-ts build",
     "test": "react-scripts-ts test --env=jsdom",
-    "eject": "react-scripts-ts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts-ts eject"
   },
   "devDependencies": {
     "@types/jest": "^22.1.3",
